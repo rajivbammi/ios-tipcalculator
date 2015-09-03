@@ -13,6 +13,7 @@
 		E794A1EE1B96A21A008D05D6 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E794A1ED1B96A21A008D05D6 /* Images.xcassets */; };
 		E794A1F11B96A21A008D05D6 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = E794A1EF1B96A21A008D05D6 /* LaunchScreen.xib */; };
 		E794A1FD1B96A21A008D05D6 /* tipsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E794A1FC1B96A21A008D05D6 /* tipsTests.swift */; };
+		E794A2071B97AA90008D05D6 /* TipViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E794A2061B97AA90008D05D6 /* TipViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +37,7 @@
 		E794A1F61B96A21A008D05D6 /* tipsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = tipsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		E794A1FB1B96A21A008D05D6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E794A1FC1B96A21A008D05D6 /* tipsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = tipsTests.swift; sourceTree = "<group>"; };
+		E794A2061B97AA90008D05D6 /* TipViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TipViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,6 +79,7 @@
 		E794A1E31B96A21A008D05D6 /* tips */ = {
 			isa = PBXGroup;
 			children = (
+				E794A2081B97AAB8008D05D6 /* ViewControllers */,
 				E794A1E61B96A21A008D05D6 /* AppDelegate.swift */,
 				E794A1E81B96A21A008D05D6 /* ViewController.swift */,
 				E794A1EA1B96A21A008D05D6 /* Main.storyboard */,
@@ -110,6 +113,14 @@
 				E794A1FB1B96A21A008D05D6 /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		E794A2081B97AAB8008D05D6 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				E794A2061B97AA90008D05D6 /* TipViewController.swift */,
+			);
+			name = ViewControllers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -213,6 +224,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				E794A1E91B96A21A008D05D6 /* ViewController.swift in Sources */,
+				E794A2071B97AA90008D05D6 /* TipViewController.swift in Sources */,
 				E794A1E71B96A21A008D05D6 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -341,6 +353,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = tips/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -351,6 +364,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = tips/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
